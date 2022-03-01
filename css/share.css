@@ -1,0 +1,156 @@
+/*FOR ALL PAGES  */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  background-color: aliceblue;
+  color: rgba(var(--i1d,38,38,38),1);
+  /*#3d464d*/
+  font-weight: normal;
+  font-size: 13px;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #2895F1;
+  outline: none;
+}
+
+.a_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #6ab9e8 !important;
+}
+
+/* HEADER */
+.header{
+  width: 100%;
+  height: 54px;
+  background-color: #010313;
+  position: fixed;
+  z-index: 10;
+}
+
+.header > .logo{
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header > .logo > a{
+  font-size: 24px;
+  color: aliceblue;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+/* MAIN VISUAL */
+.wrapper{
+  width: 100%;
+  /*max-width: 935px;*/
+  margin: 0 auto;
+}
+
+@media (min-width: 736px){
+    .wrapper {
+      width: calc(100% - 40px);
+      box-sizing: content-box;
+      /*padding: 30px 20px 0;*/
+  }
+}
+
+/* ARTICLE */
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0px 30px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-wrapper {
+    padding: 60px 0px 15px 0px;
+  }
+}
+
+.flex-row {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.flex-row img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: black;
+}
+
+.flex-row > a:hover{
+  background-color: black;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .flex-row {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .flex-row {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.bigimg {
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 80px;
+  top: 80px;
+}
+
+.close-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+

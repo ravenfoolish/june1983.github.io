@@ -1,0 +1,505 @@
+/*FOR ALL PAGES  */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  background-color: aliceblue;
+  color: rgba(var(--i1d,38,38,38),1);
+  /*#3d464d*/
+  font-weight: normal;
+  font-size: 13px;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+
+.a_disabled{
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  background: #6ab9e8 !important;
+}
+
+/* HEADER */
+.header{
+  width: 100%;
+  height: 54px;
+  background-color: #040825;
+  position: fixed;
+  z-index: 10;
+}
+
+.header > .logo{
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header > .logo > a{
+  font-size: 24px;
+  color: aliceblue;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+/* MAIN VISUAL */
+.wrapper{
+  width: 100%;
+  /*max-width: 935px;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  margin: 0 auto 30px;*/
+}
+
+@media (min-width: 736px){
+    .wrapper {
+      /*width: calc(100% - 40px);*/
+      box-sizing: content-box;
+      /*padding: 30px 20px 0;*/
+  }
+}
+
+.main-visual {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/Moon-missions.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+@media (min-width: 736px){
+  .main-visual {
+    /*margin-bottom: 15px;*/
+  }
+}
+
+@media (max-width: 735px) {
+  .main-visual {
+    height: 750px;
+  }
+}
+
+.bg{
+  /*位置の設定*/
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+    /*背景画像の設定*/
+    background-color: black;
+
+    /*透過の設定*/
+    opacity: 0.6;
+} 
+
+.inner-main-visual {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  top: 100px;
+
+}
+
+@media (max-width: 500px) {
+  .inner-main-visual {
+    padding: 10px;
+  }
+}
+
+/* ARTICLE */
+.flex-wrapper{
+
+  
+}
+
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row:before{
+	content:"";
+	display: block;
+	width:0;
+	height:0;
+	padding-bottom:3%;
+}
+
+@media (min-width: 736px){
+  .flex-row {
+      margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 735px) {
+  .flex-row {
+    margin-bottom: 3px;
+  }
+}
+
+.flex-item-01,.flex-item-02,.flex-item-03{
+  flex: 1 0 0%;
+  height: 250px;
+  background-size: cover;
+}
+
+.flex-item-01 a,.flex-item-02 a,.flex-item-03 a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-item-01 a:hover,.flex-item-02 a:hover,.flex-item-03 a:hover{
+  background-color: black;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.item01{
+  background-image: url("../img/1-mars.jpg");
+}
+
+.item02{
+  background-image: url("../img/alexander-andrews-yOIT88xWkbg-unsplash.jpg");
+}
+
+.item03{
+  background-image: url("../img/Vaisala_LIFT-Mars_the_Red_Planet-1600x900.jpg");
+}
+
+.item04{
+  background-image: url("../img/patrick-hendry-_RYmx4Jz1UM-unsplash.jpg");
+}
+
+.item05{
+  background-image: url("../img/brian-mcgowan-I0fDR8xtApA-unsplash.jpg");
+}
+
+.item06{
+  background-image: url("../img/victor-CxP_ABKfOms-unsplash.jpg");
+}
+
+.item07{
+  background-image: url("../img/Color-Full\ Moon\ ©\ Nicolas\ Lefaudeux.jpg");
+}
+
+.item08{
+  background-image: url("../img/daniele-colucci-OtXJhYjbKeg-unsplash.jpg");
+}
+
+.item09{
+  background-image: url("../img/federico-rizzarelli-XamaAMClSP0-unsplash.jpg");
+}
+
+.item10{
+  background-image: url("../img/mike-kiev-Opzk_hvwO9Q-unsplash.jpg");
+}
+
+.item11{
+  background-image: url("../img/nasa-7Cz6bWjdlDs-unsplash.jpg");
+}
+
+.item12{
+  background-image: url("../img/CNO-THA.jpg");
+}
+
+.item13{
+  background-image: url("../img/bangkok.jpg");
+}
+
+.item14{
+  background-image: url("../img/DSCN2139.jpg");
+}
+
+.item15{
+  background-image: url("../img/DSCN2316.jpg");
+}
+
+.item16{
+  background-image: url("../img/IMG_0056.JPG");
+}
+
+.item17{
+  background-image: url("../img/IMG_0057(1).JPG");
+}
+
+.item18{
+  background-image: url("../img/IMG_0063.JPG");
+}
+
+.item19{
+  background-image: url("../img/IMG_0088.JPG");
+}
+
+.item20{
+  background-image: url("../img/IMG_0156.JPG");
+}
+
+.item21{
+  background-image: url("../img/IMG_0276.JPG");
+}
+
+.item22{
+  background-image: url("../img/IMG_0301.JPG");
+}
+
+.item23{
+  background-image: url("../img/IMG_0309.JPG");
+}
+
+.item24{
+  background-image: url("../img/IMG_0314.JPG");
+}
+
+.item25{
+  background-image: url("../img/IMG_0409.JPG");
+}
+
+.item26{
+  background-image: url("../img/IMG_0424.JPG");
+}
+
+.item27{
+  background-image: url("../img/IMG_0655.JPG");
+}
+
+.item28{
+  background-image: url("../img/IMG_0988.JPG");
+}
+
+.item29{
+  background-image: url("../img/IMG_1145.JPG");
+}
+
+.item30{
+  background-image: url("../img/IMG_0254.JPG");
+}
+
+@media (min-width: 736px){
+  .flex-item-01, .flex-item-02{
+    margin-right: 28px;
+  }
+}
+
+@media (max-width: 735px) {
+  .flex-item-01, .flex-item-02{
+    margin-right: 3px;
+  }
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.bigimg {
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: 80px;
+  top: 80px;
+}
+
+.close-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color:#010a50;
+  font-family: 'Roboto', sans-serif;
+  padding:45px 0 20px;
+  font-size:14px;
+  line-height:24px;
+  color:aliceblue;
+}
+
+.site-footer hr {
+  border-top-color:aliceblue;
+  opacity:0.5
+}
+
+.site-footer hr.small {
+  margin:20px 0
+}
+
+.site-footer h6 {
+  color:aliceblue; 
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.site-footer p {
+  color:aliceblue; 
+}
+
+.site-footer p::before {
+  display: none;
+}
+
+.site-footer a {
+  color:aliceblue;
+}
+
+.site-footer a:hover {
+  color:#bf1650;
+  text-decoration:none;
+}
+
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li {
+  display:block
+}
+
+.footer-links a {
+  color:aliceblue
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#bf1650;
+  text-decoration:none;
+}
+
+.footer-links.inline li {
+  display:inline-block
+}
+
+.site-footer .social-icons {
+  text-align:right
+}
+
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.copyright-text {
+  margin:0
+}
+
+@media (max-width:991px) {
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons {
+    text-align:center
+  }
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a {
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover {
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover {
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover {
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover {
+  background-color:#ea4c89
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
